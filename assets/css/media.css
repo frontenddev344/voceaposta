@@ -58,8 +58,14 @@
     .accordion-body {
         font-size: 14px;
     }
+    .nav-bar {
+        width: 75%;
+    }
 }
 @media(max-width:992px){
+    /* .nav-bar {
+        width: 100%;
+    } */
     h1 {
         font-size: 45px;
     }
@@ -122,7 +128,7 @@
     margin-bottom: 20px;
 }
 }
-@media(max-width:767px){
+@media(max-width:767.50px){
     .casino-wrap {
        flex-direction: column;
        /* flex-wrap: wrap; */
@@ -230,5 +236,11 @@
     }
     .accordion-button {
         padding: 10px 12px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .sub-banner-wrap {
+        padding: 70px 10px 0 10px;
     }
 }
