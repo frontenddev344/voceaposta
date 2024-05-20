@@ -1,78 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
---primary:#FFD700;
---secondary:#B5A26D;
---bg:#FFF0CA;
---white:#fff;
---black:#000;
+
+:root {
+    --primary: #FFD700;
+    --secondary: #B5A26D;
+    --bg: #FFF0CA;
+    --white: #fff;
+    --black: #000;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
-ul{
-    list-style:none;
-    padding-left:0;
-    margin-bottom:0
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0
 }
-a{
-    text-decoration:none
+
+a {
+    text-decoration: none
 }
-img{
+
+img {
     max-width: 100%;
     width: 100%;
 }
 
-.container, .header-con, .drop-box{
-    max-width:1300px;
+.container,
+.header-con,
+.drop-box {
+    max-width: 1300px;
     margin: 0 auto;
 }
-.ptb-70{
-    padding:70px 0
+
+.ptb-70 {
+    padding: 70px 0
 }
-.ptb-50{
-    padding:50px 0
+
+.ptb-50 {
+    padding: 50px 0
 }
-.ptb-30{
-    padding:30px 0
+
+.ptb-30 {
+    padding: 30px 0
 }
-.pb-30{
+
+.pb-30 {
     padding-bottom: 30px;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Playfair Display", serif;
     line-height: 1.1;
 }
-h1{
+
+h1 {
     font-size: 60px;
     color: var(--white);
-    list-style:1.1;
+    list-style: 1.1;
     font-weight: 800;
 }
+
 h4 {
     font-size: 30px;
     font-weight: 700;
 }
+
 h3 {
     font-size: 40px;
     font-weight: 700;
 }
-p{
+
+p {
     font-size: 18px;
     color: var(--black);
 }
-.bg{
+
+.bg {
     background-color: var(--bg);
 }
+
 /* header css start here */
 
-.site-header{
+.site-header {
     /* background-color: var(--primary); */
     padding: 25px 0;
     position: absolute;
@@ -82,40 +106,49 @@ p{
     z-index: 99;
     border-bottom: 1px solid #fff;
 }
+
 .site-logo img {
     max-width: 250px;
 }
-.site-header .nav{
+
+.site-header .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.site-header .nav-bar ul{
+
+.site-header .nav-bar ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.site-header .nav-bar ul li a{
+
+.site-header .nav-bar ul li a {
     font-size: 18px;
     text-transform: uppercase;
     color: var(--white);
 }
-.site-header .nav-bar ul li a.active, .site-header .nav-bar ul li a:hover{
+
+.site-header .nav-bar ul li a.active,
+.site-header .nav-bar ul li a:hover {
     color: #FFD700;
 }
-.search-bar i{
+
+.search-bar i {
     font-size: 22px;
     color: var(--white);
 }
-.toggle, .colse{
+
+.toggle,
+.colse {
     display: none;
 }
 
 
 /* banner section css start here */
 
-.site-banner{
+.site-banner {
     background-image: url(../images/hero-banner-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -123,20 +156,23 @@ p{
     height: 80vh;
     position: relative;
 }
-.site-banner::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: #000;
-opacity: 0.5;
+
+.site-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
 }
-.site-banner .container{
+
+.site-banner .container {
     height: 100%;
 }
-.banner-wrap{
+
+.banner-wrap {
     display: flex;
     align-items: center;
     height: 100%;
@@ -146,18 +182,18 @@ opacity: 0.5;
 }
 
 
-.banner-txt p{
+.banner-txt p {
     color: var(--bg);
     font-size: 20px;
 }
 
-.wel-come-txt p{
+.wel-come-txt p {
     text-align: center;
     margin-bottom: 0;
 }
 
 /* popular hotel section css start here */
-.popular-img{
+.popular-img {
     background-image: url(../images/hero-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -168,8 +204,8 @@ opacity: 0.5;
     position: relative;
 }
 
-.popular-img::before, .popular-img::after
-{
+.popular-img::before,
+.popular-img::after {
     content: '';
     position: absolute;
     top: 0;
@@ -180,45 +216,54 @@ opacity: 0.5;
     opacity: 0.5;
     text-align: center;
 }
-.popular-img::after{
+
+.popular-img::after {
     height: 0;
 }
-.popular-img:hover::after{
+
+.popular-img:hover::after {
     height: 100%;
     transition: all 0.3s linear;
 }
-.popular-img h4{
+
+.popular-img h4 {
     position: absolute;
     bottom: 25px;
-   left:50%;
-   transform: translateX(-50%);
-   z-index: 9;
-   color:var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    color: var(--white);
 }
-.popular-box{
+
+.popular-box {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
     /* margin: 20px 0; */
 }
-.pop-left, .pop-right{
+
+.pop-left,
+.pop-right {
     width: 50%;
 }
-.pop-left{
+
+.pop-left {
     padding: 25px;
 }
-.pop-right{
+
+.pop-right {
     height: 100%;
 }
-.pop-right img{
+
+.pop-right img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 /* sub pages css start here */
-.sub-banner{
+.sub-banner {
     background-image: url(../images/hero-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -226,10 +271,12 @@ opacity: 0.5;
     height: 500px;
     position: relative;
 }
-.casino-banner{
+
+.casino-banner {
     background-image: url(../images/casino-banner.jpg);
 }
-.sub-banner::before{
+
+.sub-banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -239,7 +286,8 @@ opacity: 0.5;
     background-color: #000;
     opacity: 0.5;
 }
-.sub-banner-wrap{
+
+.sub-banner-wrap {
     height: 100%;
     width: 100%;
     display: flex;
@@ -248,32 +296,39 @@ opacity: 0.5;
     position: relative;
     padding-top: 70px;
 }
+
 .casino-main {
     margin-bottom: 30px;
 }
-.casino-wrap{
+
+.casino-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 
 }
-.casino-left, .casino-right{
+
+.casino-left,
+.casino-right {
     width: 50%;
 }
-.casino-right{
+
+.casino-right {
     height: 100%;
 }
-.casino-left{
+
+.casino-left {
     padding: 10px;
 }
-.casino-right img{
+
+.casino-right img {
     height: 450px;
     width: 100%;
     object-fit: cover;
 }
 
-.read-more a{
+.read-more a {
     font-size: 18px;
     border: 1px solid #FFD700;
     background-color: var(--primary);
@@ -283,67 +338,78 @@ opacity: 0.5;
     margin-top: 20px;
 
 }
-.read-more a:hover{
+
+.read-more a:hover {
     background-color: transparent;
     color: #000;
     border-color: #000;
 }
-.casino-price{
+
+.casino-price {
     display: flex;
-    align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
-    margin: 30px 0 ;
+    flex-direction: column;
+    margin: 30px 0;
 }
-.casino-price p{
-    padding: 8px 20px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
+
+.casino-price p {
+    padding: 8px 0;
     margin-bottom: 0px;
+    font-weight: 500;
 }
-.wel-come-txt h4{
+
+.wel-come-txt h4 {
     text-align: center;
     margin-bottom: 20px;
 }
 
 
-.accordion-header{
+.accordion-header {
     background-color: var(--secondary);
 }
 
 .accordion-button {
-background-color: var(--primary);
-color: #fff;
-font-size: 18px;
-font-weight: 600;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
 }
-.accordion-item{
+
+.accordion-item {
     margin: 20px 0;
     border-radius: 8px;
     overflow: hidden;
 }
+
 .accordion-button:not(.collapsed) {
     color: #fff;
     background-color: var(--primary);
-    box-shadow:none;
+    box-shadow: none;
 }
-.accordion-button::after, .accordion-button:not(.collapsed)::after {
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
+
 .accordion-button:focus {
     z-index: 3;
-    border-color:var(--primary);
+    border-color: var(--primary);
     outline: 0;
     box-shadow: none;
 }
+
 .privacy-wrap {
     margin-bottom: 30px;
 }
-.privacy-wrap ul{
+
+.privacy-wrap ul {
     padding-left: 20px;
     list-style: disc;
 }
-.form-group input, .form-group textarea {
+
+.form-group input,
+.form-group textarea {
     width: 100%;
     height: 45px;
     margin-bottom: 20px;
@@ -351,6 +417,7 @@ font-weight: 600;
     background-color: #fff0ca;
     border: none;
 }
+
 .contact-form button {
     padding: 10px 40px;
     color: #fff;
@@ -359,58 +426,69 @@ font-weight: 600;
     border: 1px solid #FFD700;
     transition: all 0.3s linear;
 }
-.contact-form button:hover{
+
+.contact-form button:hover {
     background-color: transparent;
     color: #FFD700;
 }
-.form-group textarea{
+
+.form-group textarea {
     height: 300px;
 }
+
 /* footer section css start here */
-.site-footer{
+.site-footer {
     background-color: var(--bg);
 
 }
-.footer-logo{
+
+.footer-logo {
     max-width: 250px;
     margin: 0 auto;
 }
-    .footer-wrap {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 30px;
-    }
-.footer-links ul {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 20px;
+
+.footer-wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
 }
-.footer-links ul li a{
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links ul li a {
     font-size: 18px;
     color: var(--black);
 }
-.copy-right p{
+
+.copy-right p {
     color: var(--black);
 }
-.social-links ul{
-display: flex;
-justify-content: end;
-align-items: center;
-gap: 20px;
+
+.social-links ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
 }
-.copy-right{
+
+.copy-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
     border-top: 1px solid #000;
 }
-.social-links ul li{
+
+.social-links ul li {
     height: 40px;
     width: 40px;
     border-radius: 50px;
@@ -420,20 +498,24 @@ gap: 20px;
     align-items: center;
     transition: all 0.3s linear;
 }
+
 .social-links ul li a {
     font-size: 16px;
     color: #000;
 }
-.social-links ul li:hover{
+
+.social-links ul li:hover {
     background-color: #000;
 }
-.social-links ul li:hover a{
+
+.social-links ul li:hover a {
     color: var(--white);
 }
 
-.popular-hotel .site-heading{
+.popular-hotel .site-heading {
     margin-bottom: 20px;
 }
+
 .nav-bar {
     width: 80%;
 }
